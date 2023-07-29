@@ -1,0 +1,37 @@
+.notifications {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px; 
+  min-width: 200px; 
+  color: black;
+  max-height: 200px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.notifications::-webkit-scrollbar {
+  display: none;
+}
+
+.mark-all-button {
+  border: none;
+  outline: none; 
+  font-size: 14px; 
+  text-align: right;
+  padding: 4px 8px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.mark-all-button:hover {
+  text-decoration: underline;
+}

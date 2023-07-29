@@ -1,0 +1,35 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    width: 100%; /* Fill the page horizontally */
+    max-width: 1200px; /* Optional: Limit the maximum width of the grid */
+    margin: 0 auto; /* Optional: Center the grid container horizontally */
+    padding: 20px; /* Optional: Add some padding to the grid container */
+    box-sizing: border-box; /* Include padding and border in the width */
+    border-radius: 10px;
+    min-height: 100vh; /* Fill the page vertically */
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #ccc; /* Thicker cool gray border */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for a cool effect */
+    text-align: justify;
+}
+
+/* Different sizes of grid items */
+.grid-item.large {
+    grid-column: span 2; /* Span 2 columns */
+    grid-row: span 2; /* Span 2 rows */
+}
+
+.grid-item.mid {
+    grid-column: span 2; /* Span 2 columns */
+}
+
+.grid-item.small {
+    grid-column: span 1; /* Span 1 column */
+}
